@@ -17,6 +17,9 @@ export class AppComponent implements OnInit  {
       err => console.log(`got an error`),
       () => console.log('completed')
     );
+
+    of ("Hello", "cruel", "world").subscribe(
+      val => console.log(`value emited: ${val}`));
   }
 }
 
